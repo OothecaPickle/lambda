@@ -62,6 +62,7 @@ object Search : Module(
     }
 
     init {
+/*
         onEnable {
             if (!overrideWarning && ShaderHelper.isIntegratedGraphics) {
                 MessageSendHelper.sendErrorMessage("$chatName Warning: Running Search with an Intel Integrated GPU is not recommended, as it has a &llarge&r impact on performance.")
@@ -70,7 +71,7 @@ object Search : Module(
                 return@onEnable
             }
         }
-
+*/
         safeListener<RenderWorldEvent> {
             renderer.render(false)
 
